@@ -1,0 +1,10 @@
+{
+  "ABC123": {
+    "expiry": "2026-03-01",
+    "status": "active"
+  },
+  "XYZ999": {
+    "expiry": "2025-12-31",
+    "status": "expired"
+  }
+}
