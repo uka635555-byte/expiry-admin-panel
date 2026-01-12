@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+</head>
+<body>
+
+<h2>Key Generator</h2>
+
+<input id="key" placeholder="Key">
+<input id="expiry" type="date">
+<button onclick="generate()">Generate</button>
+
+<pre id="output"></pre>
+
+<script>
+function generate() {
+  let key = document.getElementById("key").value;
+  let expiry = document.getElementById("expiry").value;
+
+  let data = {
+    key: key,
+    expiry: expiry,
+    status: "active"
+  };
+
+  document.getElementById("output").innerText =
+    JSON.stringify(data, null, 2);
+}
+</script>
+
+</body>
+  </html>
